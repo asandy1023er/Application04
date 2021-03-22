@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button Num1, Num2, Num3, Num4, Num5, Num6, Num7, Num8, Num9, Num0;
     Button equ, div, mul, add, sub, dot, del, butAC;
     TextView result;
-    int Cal_index = 0 ; //判斷是否
+    int Cal_index = 0 ; //運算是為何
     int Index_Value = 0 ; //是否按下按鍵
     String NU1 = "0" , NU2 = "0" ;
     @Override
