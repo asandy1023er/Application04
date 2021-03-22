@@ -172,13 +172,18 @@ public class MainActivity extends AppCompatActivity {
             case 4:
                 NU1 = Cal_Nu;
                 NU2 = result.getText().toString();
-                Ans = NU2.substring(0,NU2.length() - 1);
-                result.setText(Ans);
+                if (NU2.length()>1){
+                    Ans = NU2.substring(0,NU2.length() - 1);
+                    result.setText(Ans);
+                }
+                else if(NU2.length()==1){
+                result.setText("0");
+                }
                 break;
 
 //----------------------------------------------------
             case 99:
-                NU2 = result.getText().toString();
+                NU2 = result.getText().toString();//new keyword
                 double i = Double.valueOf(NU1);
                 double j = Double.valueOf(NU2);
                 switch (Cal_index) {
@@ -202,10 +207,10 @@ public class MainActivity extends AppCompatActivity {
                         Ans = Double.toString(x);
                         result.setText(Ans);
                         break;
-                    case 4:
+                    /*case 4:
                         Ans = NU2.substring(0,NU2.length() - 1);
                         result.setText(Ans);
-                        break;
+                        break;*/
                 }
                 break;
         }
