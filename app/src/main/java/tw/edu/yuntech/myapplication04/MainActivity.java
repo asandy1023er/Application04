@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
 //----------------------------------------------------
-            case 99://   = 
+            case 99://   =
                 NU2 = result.getText().toString();//new keyword
                 double i = Double.valueOf(NU1);
                 double j = Double.valueOf(NU2);
